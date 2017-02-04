@@ -1,0 +1,15 @@
+Danny Weiner - 435140
+Emily Coco - 429297
+
+http://ec2-52-33-218-205.us-west-2.compute.amazonaws.com/~ecoco/module3/login_database.html
+http://ec2-54-213-147-183.us-west-2.compute.amazonaws.com/~dnweiner/login_database.html
+
+For the creative portion, we created a way to search for stories based on their titles, a way to change user passwords, and a way to delete users.
+The code for keyword searching (admittedly rudimentary, but workable) is found in search.php and uses wildcards on either side of the user's search terms for a LIKE statement of a query.
+To change user passwords, we added a form on homepage.php that takes in a new password. This is passed to changepassword.php, where the password is encrypted and the users table of the database updated accordingly. This is a re-registering of sorts. The user is then authenticated again with their new password.
+To delete a user, we simply delete from the users table where that userid is found (with a precautionary limit of 1).
+
+TA Login instructions:
+If you want to login as a user that already exists, login with username "test" and password "test".
+If you want to login as your own user, create your own username in the register new user spot on login page.
+If you want to login as a guest, press the "Guest Login" button at the top of our login page.
